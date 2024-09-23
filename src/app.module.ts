@@ -7,6 +7,8 @@ import { FacilitiesModule } from './facilities/facilities.module';
 import { SensorsModule } from './sensors/sensors.module';
 import { EmployeesModule } from './employees/employees.module';
 import { SensorValuesModule } from './sensorValues/sensor-values.module';
+import { DevicesModule } from './devices/devices.module';
+import { CamerasModule } from './cameras/cameras.module';
 
 @Module({
   imports: [
@@ -17,7 +19,9 @@ import { SensorValuesModule } from './sensorValues/sensor-values.module';
     FacilitiesModule,
     SensorsModule,
     EmployeesModule,
-    SensorValuesModule
+    SensorValuesModule,
+    DevicesModule,
+    CamerasModule
   ],
   controllers: [AppController],
   providers: [AppService],
