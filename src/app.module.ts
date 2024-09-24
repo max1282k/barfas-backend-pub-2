@@ -9,6 +9,7 @@ import { EmployeesModule } from './employees/employees.module';
 import { SensorValuesModule } from './sensorValues/sensor-values.module';
 import { DevicesModule } from './devices/devices.module';
 import { CamerasModule } from './cameras/cameras.module';
+import { SheetsModule } from './sheets/sheets.module';
 
 @Module({
   imports: [
@@ -21,7 +22,8 @@ import { CamerasModule } from './cameras/cameras.module';
     EmployeesModule,
     SensorValuesModule,
     DevicesModule,
-    CamerasModule
+    CamerasModule,
+    SheetsModule
   ],
   controllers: [AppController],
   providers: [AppService],

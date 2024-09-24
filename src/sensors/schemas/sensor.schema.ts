@@ -25,6 +25,9 @@ export class Sensor {
   Facility: MongooseSchema.Types.ObjectId;
 
   @Prop({ required: true })
+  SensorType: string;
+
+  @Prop({ required: true })
   Min: number;
 
   @Prop({ required: true })

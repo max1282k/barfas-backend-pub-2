@@ -25,6 +25,9 @@ export class Device {
     Facility: MongooseSchema.Types.ObjectId;
 
     @Prop({ required: true })
+    DeviceType: string;
+
+    @Prop({ required: true })
     Status: string;
 
     @Prop({ required: true })

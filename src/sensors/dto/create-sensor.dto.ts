@@ -13,6 +13,9 @@ export class CreateSensorDto {
   @ApiProperty({ description: 'The ID of the facility where the sensor is located' })
   readonly Facility: string;
 
+  @ApiProperty({ description: 'The type of sensor' })
+  readonly SensorType: string;
+
   @ApiProperty({ description: 'The minimum value the sensor can measure' })
   readonly Min: number;
 

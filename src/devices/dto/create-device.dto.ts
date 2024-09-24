@@ -14,6 +14,9 @@ export class CreateDeviceDto {
   @ApiProperty({ description: 'The ID of the facility where the device is located', type: String })
   readonly Facility: Types.ObjectId;
 
+  @ApiProperty({ description: 'The type of device' })
+  readonly DeviceType: string;
+
   @ApiProperty({ description: 'The current status of the device' })
   readonly Status: string;
 
